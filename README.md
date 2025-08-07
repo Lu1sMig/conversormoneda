@@ -60,7 +60,7 @@ conversor-moneda/
    
 4. Sigue el menú para convertir monedas.
 Por ejemplo en este caso se selecion la opcion 1 y se ingreso el valor de 100 para el cambio
-<img width="525" height="527" alt="image" src="https://github.com/user-attachments/assets/7993e5e4-2247-4aad-adf5-b53da58265ec" />
+<img width="400" height="402" alt="image" src="https://github.com/user-attachments/assets/7993e5e4-2247-4aad-adf5-b53da58265ec" />
 
 
 ## Monedas disponibles
