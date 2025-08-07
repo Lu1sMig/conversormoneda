@@ -1,4 +1,4 @@
-# 💱 Conversor de Monedas en Java
+# <img width="51.2" height="51.2" alt="image" src="https://github.com/user-attachments/assets/7fb1fa68-5989-43e6-810f-044920877ec8" /> Conversor de Monedas en Java
 
 Este proyecto es una aplicación de línea de comandos en Java que permite convertir entre diferentes monedas utilizando la API pública [ExchangeRate-API](https://www.exchangerate-api.com/). Implementa buenas prácticas modernas como uso de `HttpClient`, `record`, manejo de errores, Gson para deserialización, persistencia de historial y un menú interactivo con `Map`.
 
