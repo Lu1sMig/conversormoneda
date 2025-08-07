@@ -37,13 +37,16 @@ conversor-moneda/
 ├── src/
 │   └── lad/com/alura/conversormoneda/
 │       ├── principal/
-│       │   └── ConversorApp.java            # Clase principal con flujo de ejecución
+│       │   ├── ConversorApp.java            # Clase principal con flujo de ejecución con record
+│       │   └── ConversorAppModAnt.java      # Clase principal con flujo de ejecución con JsonParser
 │       ├── modelo/
 │       │   ├── Conversor.java               # Lógica de menú, conversiones y validación
-│       │   └── ConversionResponse.java      # Record para mapear la respuesta JSON de la API
+│       │   ├── ConversionResponse.java      # Record para mapear la respuesta JSON de la API
+│       │   ├── Divisa.java                  # Futura mejora de carga de divisas
+│       │   └── GeneradorArchivo.java        # Futura mejora de generador de archivos
 │       └── historial/
 │           └── historialconsultas.txt       # Registro de conversiones realizadas
-````
+```
 ## 🛠️ Instalación y uso
 
 1. Clona el repositorio:
@@ -56,16 +59,21 @@ conversor-moneda/
    java lad.com.alura.conversormoneda.principal.ConversorApp
    
 4. Sigue el menú para convertir monedas.
+Por ejemplo en este caso se selecion la opcion 1 y se ingreso el valor de 100 para el cambio
+<img width="525" height="527" alt="image" src="https://github.com/user-attachments/assets/7993e5e4-2247-4aad-adf5-b53da58265ec" />
+
 
 ## Monedas disponibles
-Dólar estadounidense (USD)
-Peso argentino (ARS)
-Real brasileño (BRL)
-Peso colombiano (COP)
+
+Esta versión tiene las siguientes monedas disponibles
+* Dólar estadounidense (USD)
+* Peso argentino (ARS)
+* Real brasileño (BRL)
+* Peso colombiano (COP)
 
 ## Futuras lobores para mejoras
 
 1. Interfaz gráfica con Swing o JavaFX.
 2. Integración con más monedas usando Map<String, String[]>.
 3. Poder leer monedas desde un archivo externo (JSON o properties).
-4. Trabajr en los log o historiales en tabla.
+4. Trabajar en los log o historiales en tabla.
