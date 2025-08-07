@@ -1,8 +1,11 @@
 # <img width="51.2" height="51.2" alt="image" src="https://github.com/user-attachments/assets/7fb1fa68-5989-43e6-810f-044920877ec8" /> Conversor de Monedas en Java
 
-Este proyecto es una aplicación de línea de comandos en Java que permite convertir entre diferentes tipos de monedas utilizando la API pública [ExchangeRate-API](https://www.exchangerate-api.com/).
+Este proyecto es una aplicación de línea de comandos en Java que permite convertir entre diferentes tipos de monedas utilizando la API pública [ExchangeRate-API](https://www.exchangerate-api.com/). 
+
 Este proyecto es parte del Challenge Back End ONE - G8, con al finalidad de aplicar conocimientos de conceptos tales como el consumo de API, herencia, polimorfismo, listas, entre otros, adicionalmente se implementas buenas prácticas modernas como uso de `HttpClient`, `record`, manejo de errores, Gson para deserialización, persistencia de historial y un menú interactivo con `Map`.
+
 Se desarrollo dos metodos de desearilizacion tanto con Gson/record (ConversorApp.java) y JsonParser (ConversorAppModAnt.java), los cuales sepueden ejecutar desde la carpeta pincipal
+
 ---
 
 ## 🧩 Características
@@ -28,19 +31,19 @@ Se desarrollo dos metodos de desearilizacion tanto con Gson/record (ConversorApp
 ---
 
 ## 📂 Estructura del proyecto
+
+```plaintext
 conversor-moneda/
 ├── src/
-│ └── lad/com/alura/conversormoneda/
-│ ├── principal/
-│ │ └── ConversorApp.java # Clase principal con flujo principal y API
-│ ├── modelo/
-│ │ ├── Conversor.java # Lógica del menú, conversiones, historial
-│ │ └── ConversionResponse.java # Record para respuesta JSON
-│ └── historial/
-│ └── historialconsultas.txt # Archivo de historial de conversiones
-
----
-
+│   └── lad/com/alura/conversormoneda/
+│       ├── principal/
+│       │   └── ConversorApp.java            # Clase principal con flujo de ejecución
+│       ├── modelo/
+│       │   ├── Conversor.java               # Lógica de menú, conversiones y validación
+│       │   └── ConversionResponse.java      # Record para mapear la respuesta JSON de la API
+│       └── historial/
+│           └── historialconsultas.txt       # Registro de conversiones realizadas
+````
 ## 🛠️ Instalación y uso
 
 1. Clona el repositorio:
